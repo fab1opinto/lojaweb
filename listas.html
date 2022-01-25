@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Listas</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header class="row clearfix">
+        <div class="col-md-8">
+            <img src="#" />
+        </div>
+
+        <div class="col-md-4" style="margin-top: 25px;">
+            <form method="GET" class="form-inline text-right">
+                <input type="text" name="search_nome" class="form-control" placeholder="Nome do usuário" required>
+                <div style="text-align: right; margin-top: 10px;">
+                <button class="btn btn-primary" type="submit">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+<div class="row clearfix">
+    <div class="divTitulo">
+        <ul>
+        <li>
+            <a href="index.html">Início</a>
+        </li>
+        <li>
+            <a href="listas.html">Listas</a>
+        </li>
+        <li>
+            <a href="produtos.html">Produtos</a>
+        </li>
+    </ul>
+    </div>
+<div class="row clearfix">
+    <hr>
+    <h2 class="titulo">
+        <strong>Listinha de Presente</strong>
+    </h2>
+    <hr>
+    </div>
+    
+    <section class="col-md-6 centralizado">
+        <h4>Perfil</h4>
+        <img src="img/usuario/perfil.jpg" />
+        <p>Nome: </p>
+        <p>Email: </p>
+        <p><a href="">
+        <span class="glyphicon glyphicon-link"></span>
+        Link</a></p>
+        <p>Data de Criação:</p>
+    </section>
+    </div>
+
+    <section class="col-md-6">
+        <h4 class="titulo">Itens da Lista</h4>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Detalhes</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>6</td>
+                    <td>Computador</td>
+                    <td><a class="btn btn-info" href="">
+                    <span class="glyphicon glyphicon-gift"></span>    
+                        Ver</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+  
+
+</body>
+</html>

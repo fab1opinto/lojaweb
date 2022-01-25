@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<div class="container">
+
+   <header class="row clearfix">
+    Logomarca
+   </header> 
+
+   <nav class="row clearfix">
+    <div class="divTitulo">
+        <ul>
+        <li>
+            <a href="index.html">Início</a>
+        </li>
+        <li>
+            <a href="listas.html">Listas</a>
+        </li>
+        <li>
+            <a href="produtos.html">Produtos</a>
+        </li>
+    </ul>
+    </div>
+   </nav>
+
+   <div class="row clearfix caixa">
+   <section class="col-md-6">
+   <form method="POST" class="form-estilo">
+       <hr>
+       <h2 class="titulo">
+           <strong>Efetue o Login:</strong>
+       </h2>
+       <hr>
+       <p><input type="email" name="email" class="form-control" placeholder="Digite seu email" required/></p>
+       <p><input type="password" name="senhalog" class="form-control" placeholder="Digite sua senha" required /></p>
+       <label class="checkbox">
+           <input type="radio" name="lembrete" />&nbspLembrar Senha.
+       </label>
+       <br />
+       <div style="margin-top: 20px;">
+       <p><button name="login" type="submit" class="btn btn-lg btn-info btn-block">Cadastrar</button></p>
+       </div>
+   </form>
+   </section>
+   
+   <form method="POST" class="form-estilo">
+   <div style="margin-top: -25px;">
+   <section class="col-md-6">
+       <hr>
+       <h2 class="titulo">
+           <strong>Cadastre-se Agora:</strong>
+       </h2>
+       <hr>
+       <p><input type="email" name="emailcad" class="form-control" placeholder="Digite seu email" required /></p>
+       <p><input type="password" name="senha" class="form-control" placeholder="Digite sua senha" required /></p>   
+       <p><button name="login" type="submit" class="btn btn-lg btn-info btn-block">Cadastrar</button></p>
+   </section>
+   </div>
+   </form>
+
+   <section class="row clearfix caixa">
+    <hr>
+    <h2 class="titulo">
+        <strong>Como criar sua própria lista?</strong>
+    </h2>
+    <hr>
+
+    <div class="col-md-6">
+        <img src="img/usuario/perfil.jpg">
+    </div>
+
+    <div class="col-md-6">
+        <p>
+            Texto Explicativo
+        </p>
+    </div>
+    </div>
+    <hr>
+   </section>
+   </div>
+
+</div>
+</body>
+</html>
