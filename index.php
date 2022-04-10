@@ -1,3 +1,11 @@
+<?php
+require_once 'config.php';
+
+$c = new Controller();
+$c->index();
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,8 +16,9 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!--CSS-->
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
 
 <div class="container">
@@ -18,9 +27,9 @@
     Logomarca
    </header> 
 
-   <nav class="row clearfix">
-    <div class="divTitulo">
-        <ul>
+   <nav class="row clearfix caixa">
+    
+        <ul class="nav nav-pills menu-estilo">
         <li>
             <a href="index.html">Início</a>
         </li>
@@ -30,13 +39,19 @@
         <li>
             <a href="produtos.html">Produtos</a>
         </li>
-    </ul>
-    </div>
+        </ul>
+
    </nav>
 
    <div class="row clearfix caixa">
    <section class="col-md-6">
    <form method="POST" class="form-estilo">
+
+   <?php
+    if ($c->loginIndex)
+    echo '<h4 class="alert alert-warning" style="margin: 10px auto;" "text-align: center">' . $c->loginIndex . '</h4>';
+   ?>
+
        <hr>
        <h2 class="titulo">
            <strong>Efetue o Login:</strong>
@@ -48,26 +63,32 @@
            <input type="radio" name="lembrete" />&nbspLembrar Senha.
        </label>
        <br />
-       <div style="margin-top: 20px;">
        <p><button name="login" type="submit" class="btn btn-lg btn-info btn-block">Cadastrar</button></p>
-       </div>
    </form>
    </section>
    
+   <section class="col-md-6">
    <form method="POST" class="form-estilo">
-   <div style="margin-top: -25px;">
+   <?php
+   if ($c->cadastroIndex)
+   echo '<h4 class="alert alert-warning" style="margin: 10px auto"; "text-align: center">' .$c->cadastroIndex . '</h4>';
+   ?>
+   
    <section class="col-md-6">
        <hr>
        <h2 class="titulo">
-           <strong>Cadastre-se Agora:</strong>
+           <strong>Cadastre-se agora:</strong>
        </h2>
        <hr>
+       <p><input type="text" name="nome" class="form-control" placeholder="Digite seu nome" required</p>
        <p><input type="email" name="emailcad" class="form-control" placeholder="Digite seu email" required /></p>
        <p><input type="password" name="senha" class="form-control" placeholder="Digite sua senha" required /></p>   
        <p><button name="login" type="submit" class="btn btn-lg btn-info btn-block">Cadastrar</button></p>
+       </form>
    </section>
-   </div>
-   </form>
+
+   
+    </div>
 
    <section class="row clearfix caixa">
     <hr>
@@ -85,11 +106,10 @@
             Texto Explicativo
         </p>
     </div>
-    </div>
-    <hr>
+    
    </section>
    </div>
 
-</div>
+
 </body>
 </html>

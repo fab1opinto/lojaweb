@@ -38,7 +38,11 @@ li {
 
 .divTitulo {
     text-align: center;
-    font-size: 40px;
+    font-size: 1.5rem;
     font-weight: 100;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.divTitulo ul li a {
+    text-decoration: none;
 }
